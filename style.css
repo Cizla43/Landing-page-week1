@@ -3,3 +3,63 @@ body {
   margin: 0;
   padding: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+  color: ;
+}
+
+#hero {
+  background: #8ba543;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+#info {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+#cta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #info {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
