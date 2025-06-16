@@ -21,7 +21,7 @@ body {
 
 .top-bar {
   background-color: #1f1f1f;
-  color: #BFAFF2;
+  color: #eee;
   padding: 8px 20px;
   font-weight: 600;
   font-size: 14px;
@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #BFAFF2;
+  color: #eee;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -206,7 +206,7 @@ footer {
 }
 
 .wallet h3 {
-  color: #BFAFF2;
+  color: #eee;
   margin-bottom: 10px;
 }
 
