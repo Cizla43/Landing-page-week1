@@ -72,7 +72,7 @@ header img {
 }
 
 button {
-  background-color: #BFAFF2;
+  background-color: #f8d57e;
   color: #2B2B2B;
   border: none;
   padding: 12px 30px;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-  background-color: #a190d1;
+  background-color: #ccac5a;
 }
 
 main .logo img,
