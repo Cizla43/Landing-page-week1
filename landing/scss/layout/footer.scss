@@ -1,9 +1,11 @@
 // odnosi se na Footer 1280px - 1
 
-* {
-    width: 1280px;
-    height: 210px;
-    top: 20px;
-    left: 20px;
-    color: #2b2b2b;
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #1f1f1f;
+  color: #ccc;
+  padding: 20px;
+  border-radius: 12px;
 }
