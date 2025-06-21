@@ -1,59 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  z-index: 5;
+  background: var(--primary-color);
 }
 
-body {
-  font-family: 'Mulish', sans-serif;
-  background-color: #2B2B2B;
-  color: #eee;
-  line-height: 1.6;
+:root {
+
+  /* Colors */
+  --text-color: #fff;
+  --primary-color:#2b2b2b;
+  --buttonText-color:#000;
+  --button-color1:#f8d57e;
+  --button-color2:#bfaff2;
+
+  /* Font weight */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-raduis-s: 20px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* Site max width */
+  --site-max-width: 2000px;
 }
 
-.page-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+ul {
+	list-style: none;
 }
 
-.top-bar {
-  background-color: #1f1f1f;
-  color: #eee;
-  padding: 8px 20px;
-  font-weight: 600;
-  font-size: 14px;
+a {
+	text-decoration: none;
 }
 
-header {
-  padding: 20px 0;
-  text-align: center;
+button {
+	cursor: pointer;
+	border: none;
+	background: none ;
 }
 
-nav ul {
-  list-style: none;
-  margin: 10px 0 20px 0;
+img {
+	width: 30%;
+}
+
+.section-content {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: var(--site-max-width);
+}
+
+header .navbar {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+ }
+
+ .navbar .logo-text {
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+ }
+
+ .navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ }
+
+.navbar .nav-menu .nav-item .nav-link {
+	padding: 10px 50px;
+	border-radius: var(--border-radius-m);
+	transition: 0.3s ease;
 }
 
-nav ul li a {
-  color: #eee;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  transition: color 0.3s ease;
+.navbar .nav-menu .nav-item #signUp {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-size: var(--font-size-m);
 }
 
-nav ul li a:hover {
-  color: #ddd;
+.navbar .nav-menu .nav-item #logIn {
+  background-color: var(--button-color2);
+  color: var(--buttonText-color);
+  font-size: 15px;
 }
 
-header h1 {
-  font-size: 2.8rem;
+.navbar .nav-menu .nav-item .nav-link:hover {
+	color: var(--primary-color);
+	background: var(--secondary-color);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  color:var(--text-color);          
+  padding: 30px 40px;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 00;
+  
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 12px;
+}
+
+/* header h1 {
+  font-size: 60px;
   margin-bottom: 10px;
   color: #fff;
 }
@@ -85,7 +165,7 @@ button {
 
 button:hover {
   background-color: #ccac5a;
-}
+} */
 
 main .logo img,
 main .ProductImage img {
@@ -128,11 +208,11 @@ main .ProductImage img {
 }
 
 .userFeedback {
-  background-color: #3a3a3a;
+  background-color: #BFAFF2;
   padding: 30px 20px;
   border-radius: 12px;
   text-align: center;
-  color: #ddd;
+  color: #000;
   max-width: 600px;
   margin: 0 auto 40px auto;
   box-shadow: 0 0 8px rgba(0,0,0,0.3);
@@ -141,6 +221,7 @@ main .ProductImage img {
 .userFeedback p {
   font-style: italic;
   margin-bottom: 15px;
+  font: 24px ;
 }
 
 .userFeedback img {
@@ -155,7 +236,7 @@ main .ProductImage img {
   font-weight: 700;
   font-size: 1.1rem;
   margin-bottom: 5px;
-  color: #BFAFF2;
+  color: #2b2b2b;
 }
 
 .feedbackStar {
