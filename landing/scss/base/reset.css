@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
   z-index: 5;
   background: var(--primary-color);
 }
@@ -11,4 +11,4 @@ ul {
 
 a {
   text-decoration: none;
-}
+}/*# sourceMappingURL=reset.css.map */
